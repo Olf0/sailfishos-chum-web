@@ -21,8 +21,11 @@
       <li><b>sailfishos-chum-gui</b> for the SailfishOS:Chum GUI client app<br />
         References: <a href="https://github.com/sailfishos-chum/sailfishos-chum-gui">Source code repository</a> and <a href="https://build.sailfishos.org/package/show/sailfishos:chum/sailfishos-chum-gui">OBS build entry</a>
       </li>
-      <li><b>sailfishos-chum</b> for a helper RPM, which solely provides an appropriate local repository configuration for utilising SailfishOS:Chum with command line tools as pkcon or zypper<br />
+      <li><b>sailfishos-chum</b> for a helper RPM, which solely provides an appropriate local repository configuration for utilising SailfishOS:Chum with command line tools as pkcon or zypper.<br />
         References: <a href="https://github.com/sailfishos-chum/main/blob/main/rpm/chum.spec">Source code</a> and <a href="https://build.sailfishos.org/package/show/sailfishos:chum/sailfishos-chum">OBS build entry</a>
+      </li>
+      <li>Note that the SailfishOS:Chum GUI client app also provides the local repository configuration, while also providing a GUI app, which can be used in addition to pkcon or zypper.<br />
+        Hence you might rather install that instead of the sailfishos-chum helper RPM.
       </li>
     </ul>
     <li>Tap on the downloaded RPM at "File downloaded" notification on your device or in the file browser and confirm the installation.</li>
@@ -56,7 +59,7 @@
     </li>
     <li>
       <b>sailfishos-chum</b>: <a id="chum-link" hidden></a>
-      <span id="no-chum-link" class="no-link" hidden>RPM only for SailfishOS:Chum local repository configuration not found!</span>
+      <span id="no-chum-link" class="no-link" hidden>RPM solely for SailfishOS:Chum local repository configuration not found!</span>
     </li>
   </ul>
 
